@@ -19,7 +19,9 @@ INSERT INTO mi_tienda VALUES (1, "shirt", 4, 10, "yellow"),
 (14, "sunglasses", 10, 80, "black"), 
 (15, "socks", 3, 19, "black"); 
 
+--dislpay highest priced item.
 SELECT max(price) FROM mi_tienda;
 
+--What blue items cost more than 20?
 SELECT * from mi_tienda WHERE color = "blue" and price > 20;
 
