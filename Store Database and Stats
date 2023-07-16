@@ -15,7 +15,7 @@ INSERT INTO mi_tienda VALUES (1, "shirt", 4, 10, "yellow"),
 (10, "boots", 30, 65, "brown"), 
 (11, "dress", 14, 45, "blue"), 
 (12, "skirt", 12, 18, "blue"), 
-(13, "hat", 9, 20, "lavendar"), 
+(13, "hat", 9, 20, "lavender"), 
 (14, "sunglasses", 10, 80, "black"), 
 (15, "socks", 3, 19, "black"); 
 
