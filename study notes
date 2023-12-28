@@ -21,3 +21,5 @@ WHERE product_id
 IN (SELECT product_id
     FROM products 
     WHERE product_type="Internet"); 
+
+#HAVING vs WHERE where is for filtering single values and having is for filtering grouped or aggregated values (e.g. sums, avgs, min/max, count) 
