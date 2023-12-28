@@ -22,4 +22,6 @@ IN (SELECT product_id
     FROM products 
     WHERE product_type="Internet"); 
 
-#HAVING vs WHERE where is for filtering single values and having is for filtering grouped or aggregated values (e.g. sums, avgs, min/max, count) 
+--HAVING vs WHERE where is for filtering single values and having is for filtering grouped or aggregated values (e.g. sums, avgs, min/max, count) 
+--This is an example visualizing how the HAVING clause works on the aggregated data, and the WHERE clause works on individual rows.
+--Whenever you're not sure which one to use, just remember: If it's an aggregation or in a GROUP BY, use HAVING. Otherwise, use WHERE.
