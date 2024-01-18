@@ -63,7 +63,8 @@ VALUES
 --drafting queries: 
 
 --comparing which industries have the highest avg employee tenure, and what the avg PTO day package is for those industries 
---SELECT industry
+-- aggregate function query 
+SELECT industry
 , ROUND(AVG(paid_time_off_days),1) AS avg_PTO
 , ROUND(AVG(avg_employee_tenure),1) AS avg_tenure
 from fortune_companies
@@ -71,7 +72,8 @@ GROUP BY industry
 ORDER BY avg_tenure DESC
 
 --reorganizing to display how much PTO each comany offers but in weeks, ordered by weeks and industry to filter easier 
--- SELECT
+-- Case query 
+SELECT
 company_name, industry,
    CASE 
       WHEN  paid_time_off_days>= 21 THEN '3+ weeks'
@@ -82,4 +84,8 @@ company_name, industry,
 FROM fortune_companies
 Order by weeks_of_pto DESC, industry;
 
---
+-- HAVING query 
+SELECT company_name, industry, aggregate_function(column3) AS alias_name
+FROM fortune_companies
+GROUP BY column1, column2
+HAVING condition;
